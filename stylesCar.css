@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box  ;   
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-image: url(/img/road.avif);
+     background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: bottom;
+    
+    
+  
+    
+  
+    
+}
+.car img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 200px;
+    left: 100px;
+    animation: 5s carMove infinite;
+}
+
+
+
+@keyframes carMove{
+    0%{
+        transform: translateX(0px) ;
+    }
+    100%{
+        transform: translateX(1500px) ;
+    }
+}
+
