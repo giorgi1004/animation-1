@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Road{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f0e68c 0%, #c2b280 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.motorcycle{
+    position: absolute;
+        width: 200px;
+
+    bottom: 70px;
+    left: -197px;
+    
+    animation: ride 5s linear infinite;
+    animation-delay: 2s;
+}
+@keyframes ride {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: 89%;
+    }
+    
+}
+
+.airplane{
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    top: 50px;
+    right: 0px;
+    animation: fly 10s linear infinite;
+}
+
+@keyframes fly {
+    0% {
+        right:  0px;
+        top: 400px;
+    }
+    25% {
+        top: 100px;
+    }
+    50% {
+        top: 300px;
+        
+        
+    }
+    75% {
+       top: 100px;
+      
+        
+    }
+    100% {
+        top: 400px;
+       right: 100%;
+    }
+}
